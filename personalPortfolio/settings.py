@@ -133,3 +133,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # to save the images
 MEDIA_ROOT = BASE_DIR / 'media'
+try:
+    from .local_settings import *
+except ImportError:
+    print("Local settings file missing!! This must be production branch.")
