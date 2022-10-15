@@ -23,9 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-)g+_h$gqxerub3tmn)-lgnw3_*6w*g2#)4cg)^g=c7g#-_-w++'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['gopal.pythonanywhere.com','www.devoperations.engineer']
+ALLOED__HOST =[]
+# ALLOWED_HOSTS = ['gopal.pythonanywhere.com','www.devoperations.engineer','http://127.0.0.1:8000']
 
 
 # Application definition
@@ -133,7 +134,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # to save the images
 MEDIA_ROOT = BASE_DIR / 'media'
-try:
-    from .local_settings import *
-except ImportError:
-    print("Local settings file missing!! This must be production branch.")
+# try:
+#     from .local_settings import *
+# except ImportError:
+#     print("Local settings file missing!! This must be production branch.")
